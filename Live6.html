@@ -17,7 +17,7 @@ video::-webkit-media-controls-timeline {
         var hls = new Hls({
           debug: false,
         });
-        hls.loadSource('https://satoshi-cors.herokuapp.com/http://116.204.149.16/nagorik/tracks-v1a1/mono.m3u8');
+        hls.loadSource('http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
           video.play();
@@ -33,4 +33,5 @@ video::-webkit-media-controls-timeline {
         });
       }
     </script>
+
 
