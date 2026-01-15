@@ -17,7 +17,7 @@ video::-webkit-media-controls-timeline {
         var hls = new Hls({
           debug: false,
         });
-        hls.loadSource('http://537c2e45.edmonst.net/iptv/XTLZN9LAR98K4Z/19146/index.m3u8');
+        hls.loadSource('https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
           video.play();
@@ -27,11 +27,12 @@ video::-webkit-media-controls-timeline {
       // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
       // This is using the built-in support of the plain video element, without using hls.js.
       else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = 'http://537c2e45.edmonst.net/iptv/XTLZN9LAR98K4Z/19146/index.m3u8';
+        video.src = 'https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8';
         video.addEventListener('canplay', function () {
           video.play();
         });
       }
     </script>
+
 
 
