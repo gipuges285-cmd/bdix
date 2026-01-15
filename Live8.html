@@ -17,7 +17,7 @@ video::-webkit-media-controls-timeline {
         var hls = new Hls({
           debug: false,
         });
-        hls.loadSource('http://mtv.sunplex.live/MAASRANGA-TV/index.m3u8');
+        hls.loadSource('https://stream.snexus.co/live/SN_WILDLIFE/main_stream.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
           video.play();
@@ -27,11 +27,12 @@ video::-webkit-media-controls-timeline {
       // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
       // This is using the built-in support of the plain video element, without using hls.js.
       else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        video.src = 'http://mtv.sunplex.live/MAASRANGA-TV/index.m3u8';
+        video.src = 'https://stream.snexus.co/live/SN_WILDLIFE/main_stream.m3u8';
         video.addEventListener('canplay', function () {
           video.play();
         });
       }
     </script>
+
 
 
